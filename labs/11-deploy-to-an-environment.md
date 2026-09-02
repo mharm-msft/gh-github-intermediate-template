@@ -53,7 +53,7 @@ environment when a comment is made on a pull request (often referred to as
 1. Push the changes to GitHub
 
    ```bash
-   git push
+   git push -u origin HEAD
    ```
 
 ## Task 2: Open a Pull Request
@@ -71,8 +71,8 @@ environment when a comment is made on a pull request (often referred to as
 1. In the pull request, navigate to the **Add a comment** section
 1. In the comment text field, enter `.deploy`
 
-   In a few seconds, you should see a comment is automatically to the pull
-   request stating a deployment is in progress. You should also see that a
+   In a few seconds, you should see a comment automatically added to the pull
+   request stating that a deployment is in progress. You should also see that a
    deployment has been initiated.
 
    ![Start Deployment](./img/11-start-deployment.png)
@@ -94,14 +94,14 @@ environment when a comment is made on a pull request (often referred to as
 ## Task 4: Roll Back the Deployment
 
 In this scenario, we only have one environment, so we can only have one active
-version of the game at a time. For now, lets roll back the changes until the PR
+version of the game at a time. For now, let's roll back the changes until the PR
 is merged.
 
 1. In the pull request, navigate to the **Add a comment** section
 1. In the comment text field, enter `.deploy main`
 
-   In a few seconds, you should see a comment is automatically to the pull
-   request stating a deployment is in progress. You should also see that a
+   In a few seconds, you should see a comment automatically added to the pull
+   request stating that a deployment is in progress. You should also see that a
    deployment has been initiated.
 
    ![Start Rollback](./img/11-start-rollback.png)

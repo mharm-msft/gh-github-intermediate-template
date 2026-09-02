@@ -51,7 +51,7 @@ the version number in the `package.json` file.
 1. Push the `release/v2.0.0` branch to GitHub
 
    ```bash
-   git push
+   git push -u origin HEAD
    ```
 
 ## Task 3: Open a Pull Request
@@ -67,20 +67,20 @@ the version number in the `package.json` file.
    At this point, your PR will not be able to be merged. Someone in the class
    will need to review it first.
 
-1. Copy the URL of your PR and paste it into the meeting chat
+1. Copy the URL of your PR and send it to your assigned review partner
 
 ## Task 4: Review a Pull Request (Approve)
 
-As other people in the class post their PRs, try to review and approve one.
+Review and approve your assigned partner's PR.
 
-1. Click on the link to a PR in the meeting chat
+1. Open the PR URL that your assigned review partner sent you
 1. Click on the **Files changed** tab
 1. Click the **Review changes** button
 1. Enter a comment
 1. Ensure **Approve** is selected as the review type
 1. Click **Submit review**
 
-   ![Approved PR](img/11-approved-pr.png)
+   ![Approved PR](img/10-approved-pr.png)
 
 ## Task 5: Merge the Pull Request
 
@@ -97,7 +97,6 @@ Once your PR has been approved, you can merge it into `main`.
 1. Click the **Continuous Delivery** workflow
 1. Click the **Release Node.js Project** step
 1. Review the output of each of the following steps
-
    - Checkout
    - Setup GitHub Pages
    - Upload Artifact

@@ -18,15 +18,16 @@ cause many conflicts and other problems.
    ```
 
 1. At the root of the repository, create a new file named `CODEOWNERS` with the
-   following contents
+   following contents.
 
-   Replace `your-username` with your GitHub usernam. Make sure to leave the `@`
-   symbol!
+   The class setup replaces the placeholders below with your organization and
+   class team. Use the team rather than your username so another participant can
+   provide the required code-owner review.
 
    ```plain
    # Game Project Code Owners
 
-   * @your-username
+   * @<organization>/<class-team>
    ```
 
 1. Add the `CODEOWNERS` file to the repository
@@ -48,7 +49,7 @@ cause many conflicts and other problems.
 1. Click on the **Settings** tab
 1. Expand **Rules**, then click **Rulesets**
 1. Click **New ruleset**, then **New branch ruleset**
-1. In the **Ruleset name** text field, enter a name for your rulset (e.g.
+1. In the **Ruleset name** text field, enter a name for your ruleset (e.g.
    `Default Branch`)
 1. Set the **Enforcement status** to **Active**
 
@@ -60,7 +61,6 @@ cause many conflicts and other problems.
    ![Include Default Branch](./img/6-include-default-branch.png)
 
 1. In the **Rules** section, set the following:
-
    - **Require a pull request before merging:** Enabled
    - **Required approvals:** `1`
    - **Require review from Code Owners:** Enabled
@@ -80,7 +80,7 @@ push changes directly to `main`.
    git checkout main
    ```
 
-1. Make a change any file in the repository
+1. Make a change to any file in the repository
 
    For example, you could add a new line to the `README.md` file
 
@@ -108,13 +108,13 @@ push changes directly to `main`.
 
    ```plain
    remote: error: GH013: Repository rule violations found for refs/heads/main.
-   remote: Review all repository rules at https://github.com/githubschool/gh-github-intermediate-template/rules?ref=refs%2Fheads%2Fmain
+   remote: Review all repository rules at https://github.com/<organization>/<repository>/rules?ref=refs%2Fheads%2Fmain
    remote:
    remote: - Changes must be made through a pull request.
    remote:
-   To github.com:githubschool/gh-github-intermediate-template.git
+   To github.com:<organization>/<repository>.git
     ! [remote rejected] main -> main (push declined due to repository rule violations)
-   error: failed to push some refs to 'github.com:githubschool/gh-github-intermediate-template.git'
+   error: failed to push some refs to 'github.com:<organization>/<repository>.git'
    ```
 
 ## Task 4: Reset the `main` Branch
