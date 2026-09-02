@@ -60,7 +60,7 @@ into `main`.
 1. Push your branch to GitHub
 
    ```bash
-   git push
+   git push -u origin HEAD
    ```
 
 ## Task 4: Open a Pull Request
@@ -76,15 +76,15 @@ into `main`.
    At this point, your PR will not be able to be merged. Someone in the class
    will need to review it first.
 
-1. Copy the URL of your PR and paste it into the meeting chat
+1. Copy the URL of your PR and send it to your assigned review partner
 
 ## Task 5: Review a Pull Request (Suggest Changes)
 
-As other people in the class post their PRs, try to review one and provide
-feedback. In particular, you should suggest a fix to the incorrect grid size
-that was added in the PR.
+Open your assigned partner's PR and provide feedback. Because the class team is
+the code owner, any participant can provide the required code-owner review. In
+particular, suggest a fix to the incorrect grid size that was added in the PR.
 
-1. Click on the link to a PR in the meeting chat
+1. Open the PR URL that your assigned review partner sent you
 
    Save this link, as you will need it later to approve the PR.
 

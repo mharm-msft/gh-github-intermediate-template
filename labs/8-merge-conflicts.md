@@ -17,7 +17,8 @@ You will resolve this conflict in the next task.
 
 1. In your browser, navigate to your repository on GitHub
 1. Click on the **Pull requests** tab
-1. Click one of the pull requests titled `Increase the number of starting tiles`
+1. Open the pull request titled `Increase the number of starting tiles` whose
+   head branch is `feature/start-tiles-4`
 1. Click the **Files changed** tab
 
    Note that this PR changes the number of starting tiles in the game.
@@ -37,8 +38,9 @@ Now that the first PR has been merged, you'll see that the second PR has a merge
 conflict. In this task, you will resolve this conflict using the GitHub UI.
 
 1. Click on the **Pull requests** tab
-1. Click on the remaining pull requests titled
-   `Increase the number of starting tiles`
+1. Open the remaining pull request titled
+   `Increase the number of starting tiles`, whose head branch is
+   `feature/start-tiles-3`
 
    Note that the PR has a merge conflict in `src/game_manager.ts`.
 
@@ -100,7 +102,8 @@ You will resolve this conflict in the next task.
 
 1. In your browser, navigate to your repository on GitHub
 1. Click on the **Pull requests** tab
-1. Click one of the pull requests titled `Increase rate of tiles with value 4`
+1. Open the pull request titled `Increase rate of tiles with value 4` whose head
+   branch is `feature/tile-value-2`
 1. Click the **Files changed** tab
 
    Note that this PR changes the rate that determines the value of new tiles.
@@ -117,11 +120,11 @@ You will resolve this conflict in the next task.
 ## Task 4: Resolve Merge Conflicts (Command Line)
 
 Now that the first PR has been merged, you'll see that the second PR has a merge
-conflict. In this task, you will resolve this conflict using the GitHub UI.
+conflict. In this task, you will resolve this conflict using the command line.
 
 1. Click on the **Pull requests** tab
-1. Click on the remaining pull requests titled
-   `Increase rate of tiles with value 4`
+1. Open the remaining pull request titled `Increase rate of tiles with value 4`,
+   whose head branch is `feature/tile-value-1`
 
    Note that the PR has a merge conflict in `src/game_manager.ts`.
 
@@ -190,7 +193,7 @@ conflict. In this task, you will resolve this conflict using the GitHub UI.
    ```plain
    static addRandomTile(): void {
      if (Grid.cellsAvailable()) {
-       const value = Math.random() < 0.5 ? 2 : 4
+       const value = Math.random() < 0.1 ? 2 : 4
        const cell = Grid.randomAvailableCell()
 
        if (cell !== null) Grid.insertTile(new Tile(cell, value))
